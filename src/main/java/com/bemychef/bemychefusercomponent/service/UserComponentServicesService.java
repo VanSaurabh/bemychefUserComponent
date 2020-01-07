@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public interface ServicesService {
+public interface UserComponentServicesService {
 
     ResponseEntity<Object> getAllServices();
 
@@ -15,4 +15,8 @@ public interface ServicesService {
     ResponseEntity<Object> getServicesByServiceName(String serviceName);
 
     ResponseEntity<Object> addServices(JSONObject jsonObject, MultipartFile multipartFile);
+
+    ResponseEntity<Object> getServicesByServiceNameAndStatus(String categoryName, String status);
+
+    ResponseEntity<Object> getServicesByServiceStatus(String status);
 }

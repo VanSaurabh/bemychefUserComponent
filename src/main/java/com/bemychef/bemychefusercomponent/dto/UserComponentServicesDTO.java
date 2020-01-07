@@ -2,7 +2,7 @@ package com.bemychef.bemychefusercomponent.dto;
 
 import com.bemychef.bemychefusercomponent.enums.ServiceStatus;
 
-public class UserServicesDTO {
+public class UserComponentServicesDTO {
 
     private String name;
     private ServiceStatus status;
